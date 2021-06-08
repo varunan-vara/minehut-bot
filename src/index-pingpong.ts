@@ -1,7 +1,9 @@
 //Imports
 import * as dotenv from "dotenv";
 dotenv.config();
+import envconfig from "../envconfig.config";
 import {Client, Message} from "discord.js";
+
 
 //Consts
 const client = new Client();
@@ -15,5 +17,5 @@ client.on("message", (msg:Message) => {
     }
 })
 
-client.login(process.env.TOKEN);
+client.login(envconfig.TOKEN);
 

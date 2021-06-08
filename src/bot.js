@@ -1,13 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Bot = void 0;
-const discord_js_1 = require("discord.js");
-class Bot {
-    listen() {
-        let client = new discord_js_1.Client();
-        client.on("message", (message) => { });
-        return client.login("");
+var discord_js_1 = require("discord.js");
+var Bot = /** @class */ (function () {
+    function Bot() {
     }
-}
+    Bot.prototype.listen = function () {
+        var client = new discord_js_1.Client();
+        client.on("message", function (message) { });
+        return client.login("");
+    };
+    return Bot;
+}());
 exports.Bot = Bot;
 //# sourceMappingURL=bot.js.map
